@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Banking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-center font-bold text-4xl mt-28 text-green-500">Our Banking!!!</h1>
+    </header>
+    <main>
+        <section class=" grid grid-cols-3 mt-20 gap-4">
+            <div class="bg-amber-300 w-3/4 text-center mx-auto py-10 rounded">
+                <h4 class="font-semibold text-2xl">Deposit</h4>
+                <h2 class="font-bold text-4xl"><span class="text-green-600">$</span><span id="diposit-amount">00</span></h2>
+            </div>
+            <div class="bg-amber-300 w-3/4 text-center ml-4 py-10 rounded">
+                <h4 class="font-semibold text-2xl">Withdraw</h4>
+                <h2 class="font-bold text-4xl"><span class="text-green-600">$</span> <span id="withdrw-fild">00</span></h2>
+            </div>
+            <div class="bg-amber-300 w-3/4 text-center ml-4 py-10 rounded">
+                <h4 class="font-semibold text-2xl">Balance</h4>
+                <h2 class="font-bold text-4xl"><span class="text-green-600">$</span> <span id="tital-balance">1421</span>
+                 </h2>
+            </div>
+        </section>
+        <section>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-emerald-400 w-3/4 mt-8 px-4 mx-auto py-4 text-center rounded mt-8">
+                    <h1 class="text-xl font-semibold py-2">Please Diposit</h1>
+                    <input id="amount-fild" class="border-2 rounded mb-2" type="text" placeholder="Enter Your Amount"> <br>
+                    <button id="diposit-btn" class="bg-emerald-700 text-white font-semibold py-2 px-3 rounded mb-2">Diposit</button>
+                </div>
+                <div class="bg-emerald-400 w-3/4 mt-8 px-4 py-4 text-center rounded mt-8">
+                    <h1 class="text-xl font-semibold py-2">Please Withdraw</h1>
+                    <input id="withdraw-fild" class="border-2 rounded mb-2" type="text" placeholder="Enter Your Amount"> <br>
+                    <button id="withdraw-btn" class="bg-emerald-700 text-white font-semibold py-2 px-3 rounded mb-2">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/banking.js"></script>
+</body>
+</html>
